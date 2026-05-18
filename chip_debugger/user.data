@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chip_watcher_data>
+<cwc_data version="1.0">
+    <instance name="auto_created_cwc1">
+        <watcher_nodes/>
+        <trigger_config/>
+    </instance>
+    <instance name="auto_created_cwc2">
+        <watcher_nodes>
+            <net name="clk_50" original_name="clk_50" synchronizable="true" color="#00ff00"/>
+            <net name="u3_udp_ip_protocol_stack/arp_request_no_reply_error" original_name="u3_udp_ip_protocol_stack/arp_request_no_reply_error" synchronizable="true" color="#00ff00"/>
+            <net name="u_cam_bridge/udp_tx_ready" original_name="u_cam_bridge/udp_tx_ready" synchronizable="true" color="#00ff00"/>
+        </watcher_nodes>
+        <trigger_config/>
+        <capture_control_config/>
+    </instance>
+</cwc_data>
