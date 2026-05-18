@@ -1,0 +1,17 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     leader
+   Run Date =   Mon Oct 20 21:45:40 2025
+
+   Run on =     LAPTOP-L0PT6B06
+============================================================
+USR-6029 WARNING: Database of an earlier version is imported, the hierarchy info import is skipped.
+USR-6001 WARNING: No ports matched 'get_ports clkw'
+USR-6001 WARNING: No ports matched 'get_ports clkr'
+USR-8141 CRITICAL-WARNING: set_false_path: please specify the path.
+USR-6001 WARNING: No ports matched 'get_ports clkw'
+USR-6001 WARNING: No ports matched 'get_ports clkr'
+USR-8141 CRITICAL-WARNING: set_false_path: please specify the path.

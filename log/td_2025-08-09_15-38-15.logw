@@ -1,0 +1,57 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Program/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     28408
+   Run Date =   Sat Aug  9 15:38:15 2025
+
+   Run on =     BERUGA0023
+============================================================
+USR-6029 WARNING: Database of an earlier version is imported, the hierarchy info import is skipped.
+USR-6001 WARNING: No ports matched 'get_ports clkw'
+USR-6001 WARNING: No ports matched 'get_ports clkr'
+USR-8141 CRITICAL-WARNING: set_false_path: please specify the path.
+USR-6001 WARNING: No ports matched 'get_ports clkw'
+USR-6001 WARNING: No ports matched 'get_ports clkr'
+USR-8141 CRITICAL-WARNING: set_false_path: please specify the path.
+PRJ-6608 WARNING: Fail to open file E:/projects/2023_10_10_HX4S20_test/HX4S20_OV5640_check/HX4S20_OV5640/pic_sdram_Runs/phy_1/.bitgen_param.f
+PRJ-5303 WARNING: Run syn_1 failed.
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: The file src/sdram_r/sdram_para.v will not be compiled since it is not included by any other files. Set it as 'global include' if it should be compiled.
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+PRJ-5303 WARNING: Run phy_1 failed.
+HDL-8007 ERROR: syntax error near 'wire' in src/top.v(62)
+HDL-8007 ERROR: Verilog 2000 keyword 'wire' used in incorrect context in src/top.v(62)
+HDL-8007 ERROR: concurrent assignment to a non-net 'vga_out_hs' is not permitted in src/top.v(93)
+HDL-8007 ERROR: ignore module module due to previous errors in src/top.v(1)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+PRJ-5303 WARNING: Run syn_1 failed.
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1024768.enc.v(231)
+HDL-5007 WARNING: literal value ** truncated to fit in ** bits in src/hdmi/enc_file/video_tpg_1280800.enc.v(233)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in src/sdram/enc_file/sdr_init_ref.enc.v(47)
