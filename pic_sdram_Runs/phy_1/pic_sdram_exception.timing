@@ -1,0 +1,1514 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Thu Nov  6 20:25:08 2025
+
+Top Model           : udp_data
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 93.77%
+Constraint File     : C:/Users/leader/Desktop/lab_ex_5_HX4S20_OV5640/top.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		        24           24            0            0   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 7.700
+		        70           70            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 1
+		        24           24            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 1
+		         2            2            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 1
+		         2            2            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 1
+		         5            5            0            0   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 1
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+Status of timing exceptions
+--------------------------------------------------
+
+MCP/SMD Details
+--------------------
+
+
+Constraint     :   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 7.700
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           24
+Dominated      :           24,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 1
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           70
+Dominated      :           70,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 1
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           24
+Dominated      :           24,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 1
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            2
+Dominated      :            2,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 1
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            2
+Dominated      :            2,        100.0%
+
+
+Constraint     :   set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 1
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :            5
+Dominated      :            5,        100.0%
+
+
+Details on timing exceptions
+--------------------------------------------------
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 1
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]}] -datapath_only 1
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS     -0.038ns, STNS     -0.392ns,        20 Viol Endpoints,        70 Total Endpoints,        70 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -0.038ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[25]_syn_4.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[25]_syn_4.mi[1] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.922ns (cell 0.289ns (31%), net 0.633ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[25]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x006y066z0          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[25]_syn_4.q[0]
+net (fo=1)                              0.633          0.779          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[25],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[25]_syn_4.mi[1]
+reg                 x006y066z2          0.143    r     0.922          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[25],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.922               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[25]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.038               
+
+Slack               : -0.038ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[28]_syn_3.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[32]_syn_4.mi[1] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.922ns (cell 0.289ns (31%), net 0.633ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[28]_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x021y060z1          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[28]_syn_3.q[0]
+net (fo=1)                              0.633          0.779          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[32],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[32]_syn_4.mi[1]
+reg                 x021y060z3          0.143    r     0.922          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[32],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.922               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[32]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.038               
+
+Slack               : -0.038ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[62]_syn_3.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[62]_syn_3.mi[1] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.922ns (cell 0.289ns (31%), net 0.633ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[62]_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x006y069z0          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[62]_syn_3.q[1]
+net (fo=1)                              0.633          0.779          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[62],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[62]_syn_3.mi[1]
+reg                 x006y069z3          0.143    r     0.922          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[62],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.922               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[62]_syn_3.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.038               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[26]_syn_4.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : uart_rx/baud_cnt_b[13]_syn_17.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[26]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x011y062z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[26]_syn_4.q[0]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[26],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: uart_rx/baud_cnt_b[13]_syn_17.mi[0]
+reg                 x011y062z0          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[26],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: uart_rx/baud_cnt_b[13]_syn_17.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[10]_syn_3.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[10]_syn_3.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[10]_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x031y066z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[10]_syn_3.q[0]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[11],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[10]_syn_3.mi[0]
+reg                 x031y066z1          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[11],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[10]_syn_3.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[27]_syn_3.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[27]_syn_3.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[27]_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y063z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[27]_syn_3.q[0]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[34],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[27]_syn_3.mi[0]
+reg                 x014y063z1          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[34],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[27]_syn_3.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[43]_syn_3.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[44]_syn_3.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[43]_syn_3.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x021y069z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[43]_syn_3.q[0]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[45],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[44]_syn_3.mi[0]
+reg                 x021y069z1          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[45],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[44]_syn_3.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[52]_syn_4.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[52]_syn_4.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[52]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x003y064z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[52]_syn_4.q[0]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[60],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[52]_syn_4.mi[0]
+reg                 x003y064z1          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[60],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[52]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.031ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[49]_syn_4.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[49]_syn_4.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.915ns (cell 0.289ns (31%), net 0.626ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[49]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x012y066z2          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[49]_syn_4.q[1]
+net (fo=1)                              0.626          0.772          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[49],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[49]_syn_4.mi[0]
+reg                 x012y066z0          0.143    r     0.915          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[49],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.915               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[49]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.031               
+
+Slack               : -0.007ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[51]_syn_4.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[0]_syn_4.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.289ns (32%), net 0.602ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[51]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x004y066z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk_reg[51]_syn_4.q[0]
+net (fo=1)                              0.602          0.748          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_aclk[53],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[0]_syn_4.mi[0]
+reg                 x005y066z2          0.143    r     0.891          net: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk[53],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/bus_data_r_bclk_reg[0]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.007               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 1
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]}] -to [get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]}] -datapath_only 1
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS     -0.154ns, STNS     -0.291ns,         9 Viol Endpoints,        24 Total Endpoints,        24 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -0.154ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[22]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[22]_syn_4.mi[1] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 1.038ns (cell 0.289ns (27%), net 0.749ns (73%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[22]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x005y063z0          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[22]_syn_4.q[0]
+net (fo=1)                              0.749          0.895          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[22],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[22]_syn_4.mi[1]
+reg                 x005y063z2          0.143    r     1.038          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[22],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.038               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[22]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.154               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[0]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[0]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[0]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x003y061z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[0]_syn_4.q[1]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[0],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[0]_syn_4.mi[0]
+reg                 x003y061z1          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[0],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[0]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[8]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[7]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[8]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x004y059z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[8]_syn_4.q[0]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[6],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[7]_syn_4.mi[0]
+reg                 x004y059z0          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[6],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[7]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.034ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[21]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.918ns (cell 0.289ns (31%), net 0.629ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[21]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x002y063z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[21]_syn_4.q[1]
+net (fo=1)                              0.629          0.775          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[21],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_4.mi[0]
+reg                 x002y063z1          0.143    r     0.918          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[21],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.918               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.034               
+
+Slack               : -0.007ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[0]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[1]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.289ns (32%), net 0.602ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[0]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x003y061z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[0]_syn_4.q[0]
+net (fo=1)                              0.602          0.748          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[16],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[1]_syn_4.mi[0]
+reg                 x003y062z2          0.143    r     0.891          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[16],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[1]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.007               
+
+Slack               : -0.007ns
+Begin Point         : u_ov5640_dri/u_i2c_dr/sda_dir_reg_syn_156.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[10]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.289ns (32%), net 0.602ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: u_ov5640_dri/u_i2c_dr/sda_dir_reg_syn_156.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x001y059z3          0.146    r     0.146          pin: u_ov5640_dri/u_i2c_dr/sda_dir_reg_syn_156.q[0]
+net (fo=1)                              0.602          0.748          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[14],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[10]_syn_4.mi[0]
+reg                 x002y059z2          0.143    r     0.891          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[14],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[10]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.007               
+
+Slack               : -0.007ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[1]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[17]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.289ns (32%), net 0.602ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[1]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x004y062z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[1]_syn_4.q[0]
+net (fo=1)                              0.602          0.748          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[2],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[17]_syn_4.mi[0]
+reg                 x005y062z3          0.143    r     0.891          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[2],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[17]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.007               
+
+Slack               : -0.007ns
+Begin Point         : u_ov5640_dri/u_i2c_dr/add1_syn_54.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[17]_syn_4.mi[1] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.289ns (32%), net 0.602ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: u_ov5640_dri/u_i2c_dr/add1_syn_54.clk
+--------------------------------------------------------------------  ---------------
+ADDER (clk2q)       x005y061z0          0.146    r     0.146          pin: u_ov5640_dri/u_i2c_dr/add1_syn_54.q[0]
+net (fo=1)                              0.602          0.748          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[17],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[17]_syn_4.mi[1]
+reg                 x005y062z3          0.143    r     0.891          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[17],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[17]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.007               
+
+Slack               : -0.007ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[23]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[22]_syn_4.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.891ns (cell 0.289ns (32%), net 0.602ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[23]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x005y064z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[23]_syn_4.q[0]
+net (fo=1)                              0.602          0.748          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[23],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[22]_syn_4.mi[0]
+reg                 x005y063z2          0.143    r     0.891          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[23],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.891               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[22]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.007               
+
+Slack               : 0.069ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[21]_syn_4.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_4.mi[1] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.815ns (cell 0.289ns (35%), net 0.526ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[21]_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x002y063z3          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk_reg[21]_syn_4.q[0]
+net (fo=1)                              0.526          0.672          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_bclk[20],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_4.mi[1]
+reg                 x002y063z1          0.143    r     0.815          net: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk[20],  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.815               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_r_aclk_reg[20]_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.069               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 1
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*}] -datapath_only 1
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      0.069ns, STNS      0.000ns,         0 Viol Endpoints,         2 Total Endpoints,         2 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.069ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk_reg_syn_10.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_sync1_bclk_reg_syn_5.mi[1] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.815ns (cell 0.289ns (35%), net 0.526ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 3
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk_reg_syn_10.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x002y067z1          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk_reg_syn_10.q[0]
+net (fo=3)                              0.526          0.672          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_aclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_sync1_bclk_reg_syn_5.mi[1]
+reg                 x002y067z3          0.143    r     0.815          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_sync1_bclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.815               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/req_sync1_bclk_reg_syn_5.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.069               
+
+Slack               : 0.253ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_4.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk_reg_syn_5.mi[0] (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.631ns (cell 0.289ns (45%), net 0.342ns (55%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 3
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_4.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x004y065z0          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_4.q[0]
+net (fo=3)                              0.342          0.488          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_aclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk_reg_syn_5.mi[0]
+reg                 x004y064z0          0.143    r     0.631          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.631               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/req_sync1_bclk_reg_syn_5.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.253               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 1
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*}] -to [get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*}] -datapath_only 1
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS      0.122ns, STNS      0.000ns,         0 Viol Endpoints,         2 Total Endpoints,         2 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.122ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_6.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_stat/bus_data_vld_aclk_reg_syn_5.mi[0] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.762ns (cell 0.289ns (37%), net 0.473ns (63%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_6.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x004y064z1          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_6.q[0]
+net (fo=2)                              0.473          0.619          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_bclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_vld_aclk_reg_syn_5.mi[0]
+reg                 x004y064z3          0.143    r     0.762          net: debug_hub_top/U_0_handshake_sync_stat/U_handshake_sync/ack_sync1_aclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.762               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_stat/bus_data_vld_aclk_reg_syn_5.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.122               
+
+Slack               : 0.265ns
+Begin Point         : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_6.clk (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_4.mi[1] (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 1.000ns { config_inst.jtck rising@0.000ns - clk_in rising@0.000ns }
+Data Path Delay     : 0.619ns (cell 0.289ns (46%), net 0.330ns (54%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_6.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x004y064z1          0.146    r     0.146          pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk_reg_syn_6.q[1]
+net (fo=2)                              0.330          0.476          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_bclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_4.mi[1]
+reg                 x004y065z0          0.143    r     0.619          net: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.619               
+
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_0_handshake_sync_ctrl/U_handshake_sync/ack_sync1_aclk_reg_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116          0.884               
+clock uncertainty                       0.000          0.884               
+clock pessimism                         0.000          0.884               
+--------------------------------------------------------------------  ---------------
+Required                                               0.884               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.265               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+Timing details for constraint:
+	set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 1
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -nowarn -from [get_regs {debug_hub_top/U_tap/rst*}] -to [get_regs {debug_hub_top/slave_*_rst_sync*}] -datapath_only 1
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS     -0.327ns, STNS     -1.339ns,         5 Viol Endpoints,         5 Total Endpoints,         5 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -0.327ns
+Begin Point         : debug_hub_top/U_tap/rst_reg_syn_9.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : auto_created_cwc1/wrapper_cwc_top/U_cwc/U_cwc_bus_top/CWC_BUS_DETECTOR[0]$BUS_DETECTOR$U_cwc_bus_det/lt0_syn_33.sr (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : recovery
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 1.027ns (cell 0.232ns (22%), net 0.795ns (78%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 30
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_tap/rst_reg_syn_9.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y061z1          0.146    r     0.146          pin: debug_hub_top/U_tap/rst_reg_syn_9.q[0]
+net (fo=30)                             0.795          0.941          net: debug_hub_top/U_0_register/rst_dup_6,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: auto_created_cwc1/wrapper_cwc_top/U_cwc/U_cwc_bus_top/CWC_BUS_DETECTOR[0]$BUS_DETECTOR$U_cwc_bus_det/lt0_syn_33.sr
+ADDER (reg)         x017y063z0          0.086    r     1.027               
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.027               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: auto_created_cwc1/wrapper_cwc_top/U_cwc/U_cwc_bus_top/CWC_BUS_DETECTOR[0]$BUS_DETECTOR$U_cwc_bus_det/lt0_syn_33.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+recovery                               -0.300          0.700               
+clock uncertainty                       0.000          0.700               
+clock pessimism                         0.000          0.700               
+--------------------------------------------------------------------  ---------------
+Required                                               0.700               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.327               
+
+Slack               : -0.314ns
+Begin Point         : debug_hub_top/U_tap/rst_reg_syn_10.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_rst_sync2_reg_syn_8.sr (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : recovery
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 1.014ns (cell 0.232ns (22%), net 0.782ns (78%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 8
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_tap/rst_reg_syn_10.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x007y069z1          0.146    r     0.146          pin: debug_hub_top/U_tap/rst_reg_syn_10.q[0]
+net (fo=8)                              0.782          0.928          net: debug_hub_top/U_0_register/rst_dup_7,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync2_reg_syn_8.sr
+reg                 x007y069z2          0.086    r     1.014               
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.014               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync2_reg_syn_8.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+recovery                               -0.300          0.700               
+clock uncertainty                       0.000          0.700               
+clock pessimism                         0.000          0.700               
+--------------------------------------------------------------------  ---------------
+Required                                               0.700               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.314               
+
+Slack               : -0.314ns
+Begin Point         : debug_hub_top/U_tap/rst_reg_syn_13.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_rst_sync2_reg_syn_14.sr (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : recovery
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 1.014ns (cell 0.232ns (22%), net 0.782ns (78%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 9
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_tap/rst_reg_syn_13.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y069z1          0.146    r     0.146          pin: debug_hub_top/U_tap/rst_reg_syn_13.q[0]
+net (fo=9)                              0.782          0.928          net: debug_hub_top/U_0_register/rst,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync2_reg_syn_14.sr
+reg                 x014y069z2          0.086    r     1.014               
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.014               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync2_reg_syn_14.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+recovery                               -0.300          0.700               
+clock uncertainty                       0.000          0.700               
+clock pessimism                         0.000          0.700               
+--------------------------------------------------------------------  ---------------
+Required                                               0.700               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.314               
+
+Slack               : -0.192ns
+Begin Point         : debug_hub_top/U_tap/rst_reg_syn_9.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_rst_sync1_reg_syn_4.sr (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : recovery
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.892ns (cell 0.232ns (26%), net 0.660ns (74%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 30
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_tap/rst_reg_syn_9.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y061z1          0.146    r     0.146          pin: debug_hub_top/U_tap/rst_reg_syn_9.q[0]
+net (fo=30)                             0.660          0.806          net: debug_hub_top/U_0_register/rst_dup_6,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync1_reg_syn_4.sr
+reg                 x014y060z0          0.086    r     0.892               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.892               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync1_reg_syn_4.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+recovery                               -0.300          0.700               
+clock uncertainty                       0.000          0.700               
+clock pessimism                         0.000          0.700               
+--------------------------------------------------------------------  ---------------
+Required                                               0.700               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.192               
+
+Slack               : -0.192ns
+Begin Point         : debug_hub_top/U_tap/rst_reg_syn_9.clk (rising edge triggered by clock config_inst.jtck  { rise@0.000000ns  fall@50.000000ns  period=100.000000 })
+End Point           : debug_hub_top/slave_0_rst_sync2_reg_syn_10.sr (rising edge triggered by clock clk_in  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : recovery
+Process             : slow
+Budget              : 1.000ns { clk_in rising@0.000ns - config_inst.jtck rising@0.000ns }
+Data Path Delay     : 0.892ns (cell 0.232ns (26%), net 0.660ns (74%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 30
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+CONFIG              x000y068            0.000          0.000          pin: config_inst.jtck
+net (fo=1)                              0.000          0.000          net: cwc_jtck,  NOFILE(0)
+                                                                      pin: cwc_jtck_syn_1.clki
+GCLK                x001y068z0          0.000          0.000          pin: cwc_jtck_syn_1.clko
+net (fo=225)                            0.000          0.000          net: cwc_jtck_syn_2,  NOFILE(0)
+                                                                      pin: debug_hub_top/U_tap/rst_reg_syn_9.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x014y061z1          0.146    r     0.146          pin: debug_hub_top/U_tap/rst_reg_syn_9.q[0]
+net (fo=30)                             0.660          0.806          net: debug_hub_top/U_0_register/rst_dup_6,  D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/ip/apm/apm_cwc\apm_debughub.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync2_reg_syn_10.sr
+reg                 x014y062z0          0.086    r     0.892               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.892               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk_50
+hierarchy                               0.000          0.000          pin: clk_50_syn_2.ipad
+PAD                 x020y071            0.000          0.000          pin: clk_50_syn_2.di
+net (fo=391)                            0.000          0.000          net: auto_created_cwc1/wrapper_cwc_top/U_cwc_ram/clka,  D:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\ip/apm/apm_cwc/apm_cwc.sv(0)
+                                                                      pin: debug_hub_top/slave_0_rst_sync2_reg_syn_10.clk
+constraint delay                        1.000          1.000               
+--------------------------------------------------------------------  ---------------
+recovery                               -0.300          0.700               
+clock uncertainty                       0.000          0.700               
+clock pessimism                         0.000          0.700               
+--------------------------------------------------------------------  ---------------
+Required                                               0.700               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.192               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+
+

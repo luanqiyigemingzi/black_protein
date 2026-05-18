@@ -1,0 +1,23 @@
+Location         : C:\Users\leader\Desktop\lab_ex_5_HX4S20_OV5640\pic_sdram_Runs\phy_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : udp_data
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : final
+Setup            : WNS -6826ps  TNS  -767840ps  NUM_FEPS   690
+Hold             : WNS     2ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+      route      |    2     |  1m0s(70%)  |    56(72%)    |        860        |        860        
+      place      |    2     |  25s(29%)   |    21(27%)    |        855        |        855        
+    import_db    |    3     |   0s(0%)    |     0(0%)     |        309        |        309        
+  import_device  |    1     |   0s(0%)    |     0(0%)     |        82         |        82         
+      pack       |    1     |   0s(0%)    |     0(0%)     |        309        |        309        
+--------------------------------------------------------------------------------------------------
+      total      |    9     |    1m25s    |      77       |        860        |        860        
+--------------------------------------------------------------------------------------------------
